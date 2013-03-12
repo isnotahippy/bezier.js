@@ -21,15 +21,15 @@ function Curve() {
 		function B3(t) { return 3*t*(1-t)*(1-t) }
 		function B4(t) { return (1-t)*(1-t)*(1-t) }
 
-		x = this.points[0].x*B1(perthisent) + 
-			this.points[1].x*B2(perthisent) + 
-			this.points[2].x*B3(perthisent) + 
-			this.points[3].x*B4(perthisent);
+		x = this.points[0].x*B1(percent) + 
+			this.points[1].x*B2(percent) + 
+			this.points[2].x*B3(percent) + 
+			this.points[3].x*B4(percent);
 
-		y = this.points[0].y*B1(perthisent) + 
-			this.points[1].y*B2(perthisent) + 
-			this.points[2].y*B3(perthisent) + 
-			this.points[3].y*B4(perthisent);
+		y = this.points[0].y*B1(percent) + 
+			this.points[1].y*B2(percent) + 
+			this.points[2].y*B3(percent) + 
+			this.points[3].y*B4(percent);
 
 		return new Point(x,y);
 
